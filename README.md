@@ -16,3 +16,5 @@ Github Repo: https://github.com/EliKowal/Product
 ![Picture](/Product_Image.png)
 
 <a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons created by Hilmy Abiyyu A. - Flaticon</a>
+
+-Rest of images were personally created
