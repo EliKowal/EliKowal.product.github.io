@@ -15,7 +15,6 @@
         .title {
             display: grid;
             background: url("https://i.imgur.com/mKm109V.png");
-
             border: 20px solid rgba(250,250,250,100);
             border-left:80px solid rgba(250,250,250,100);
             border-right: 80px solid rgba(250,250,250,100);
@@ -75,24 +74,28 @@
 
     <div class="one">
         <h2 class="display-5"> <font face="Monospace"> <b> Flower Lamp </b> </font></h2>
-        <p>Flower Colors in Lamp</p>
+        <p>Please choose the color of flowers for your lamp</p>
         <p>
             <input type="checkbox" name="Yellow" value="yllw">Yellow
             <input type="checkbox" name="Red" value="rd">Red
             <input type="checkbox" name="Pink" value="pnk">Pink
         </p>
+
+        <img src="https://i.imgur.com/eO9gNXL.png" widht ="200" height="200">
     </div>
 
 
     <div class="two">
-            <h2 class="display-5"><font face="Monospace"> <b> Flower Pot </b> </font></h2>
-        <font face="Arial"> <p> Please choose the flower design on your flower pot </p> </font>
+            <h2 class="display-5"><font face="Monospace"> <b> Succulent Pot </b> </font></h2>
+        <font face="Arial"> <p> Please choose the design for your succulent pot </p> </font>
+        <p>
         <select name="Design">
-            <option value="Tulips">Tulips</option>
             <option value="Ducks">Ducks</option>
             <option value="Frogs">Frogs</option>
             <option value="Cats">Cats</option>
         </select>
+        </p>
+        <img src="https://i.imgur.com/hhUhAXf.png" widht ="200" height="200">
 
     </div>
 
@@ -103,8 +106,9 @@
             <div class="row">
                 <div class="col-12 mt-2 mb-2">
                     <div class="col-12 mt-2 mb-2">
-                        <h1 class="display-5">Checkout</h1></div>
-                    <div class="col-10">Order Information <i class="fa fa-trophy" aria-hidden="true"></i>
+                        <h2 class="display-5"> <font face="Monospace"> <b>Checkout</b></font></h2>
+                    </div>
+                    <div class="col-10">Order Information <i class="order" aria-hidden="true"></i>
 
                         <div class="col-8">
                             <div class="form-group row">
@@ -133,7 +137,7 @@
                             </div>
                         </div>
 
-                        <div class="col-10">
+                        <div class="col-12">
                             <div class="form-group row">
                                 <label for="comments" class="col-sm-2 col-form-label">Comments: </label>
                                 <div class="col-sm-12">
@@ -144,11 +148,9 @@
                         </div>
 
 
-
                         <div class="row">
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-2">
                                 <button type="submit" class="btn btn-primary">Submit <i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
-                                <input type="reset" value="Reset" class="btn btn-secondary">
                             </div>
                         </div>
                     </div>
