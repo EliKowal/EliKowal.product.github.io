@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Pleasant Decorations</title>
+    <style type="text/css">
+
+        .title {
+            display: grid;
+            background: url("https://i.imgur.com/mKm109V.png");
+            border: 20px solid rgba(250,250,250,100);
+            border-left:80px solid rgba(250,250,250,100);
+            border-right: 80px solid rgba(250,250,250,100);
+            padding: 20px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            gap: 10px;
+            padding: 30px;
+            padding-left: 50px;
+            border: 10px solid rgba(250,250,250,100);
+            border-left:80px solid rgba(250,250,250,100);
+            border-right: 80px solid rgba(250,250,250,100);
+            background-color: rgba(248,187,208,100);
+            grid-auto-rows: minmax(100px, auto);
+                              }
+        .one {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            padding-right:20px;
+            padding-left: 50px;
+            padding-top:20px;
+            border: 10px dotted rgba(250,250,250,100);
+
+        }
+        .two {
+            grid-column: 2 / 3;
+            grid-row: 1;
+            padding-right:20px;
+            padding-top:20px;
+            border: 10px dotted rgba(250,250,250,100);
+            border-left-color: rgba(0,0,0,0);
+        }
+        .three{
+            border: 10px dotted rgba(250,250,250,100);
+            padding-right:20px;
+
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="title">
+    <h1 style="color:#721233">
+        <font size="40" face="Monospace">
+            <center> <img src="https://i.imgur.com/kzlr7ij.png" width="100" height="100"><b> Pleasant Decorations </b> <img src="https://i.imgur.com/kzlr7ij.png" width="100" height="100"></center>
+    </font>
+    </h1>
+</div>
+
+<div class="wrapper">
+
+
+    <div class="one">
+        <h2 class="display-5"> <font face="Monospace"> <b> Flower Lamp </b> </font></h2>
+        <p><font face="Arial"><u>Choose the color of flowers for your lamp</u></font></p>
+        <p>
+            <input type="checkbox" name="Yellow" value="yllw">Yellow
+            <input type="checkbox" name="Red" value="rd">Red
+            <input type="checkbox" name="Pink" value="pnk">Pink
+        </p>
+
+        <font face="Arial"> <p><u> Choose the light color </u></p> </font>
+        <p>
+            <select name="Design">
+                <option value="Yellow1">Soft Yellow</option>
+                <option value="White1">White</option>
+                <option value="Pink1">Light Pink</option>
+            </select>
+
+        <p><font face="Arial"><u>Choose the color of the flower pot</u></font></p>
+        <p>
+            <input type="radio" id="MintGreen" name="design-option1" value="MintGreen">
+            <label for="Green">Mint Green</label><br>
+            <input type="radio" id="Silver" name="design-option1" value="Silver">
+            <label for="Purple">Silver</label><br>
+            <input type="radio" id="Black" name="design-option1" value="Black">
+            <label for="Pink">Purple</label><br>
+        </p>
+
+
+        <!--- Flower Lamp Image -->
+        <img src="https://i.imgur.com/eO9gNXL.png" width ="220" height="220">
+    </div>
+
+
+    <div class="two">
+            <h2 class="display-5"><font face="Monospace"> <b> Succulent Pot </b> </font></h2>
+        <font face="Arial"> <p><u> Choose the design for your succulent pot </u></p> </font>
+        <p>
+        <select name="Design">
+            <option value="Ducks">Ducks</option>
+            <option value="Frogs">Frogs</option>
+            <option value="Cats">Cats</option>
+        </select>
+
+            <p><font face="Arial"><u>Choose the color of your succulent</u></font></p>
+        <p>
+            <input type="radio" id="Green" name="design-option2" value="Green">
+            <label for="Green">Green</label><br>
+            <input type="radio" id="Purple" name="design-option2" value="Purple">
+            <label for="Purple">Purple</label><br>
+            <input type="radio" id="Pink" name="design-option2" value="Pink">
+            <label for="Pink">Pink</label><br>
+        </p>
+
+        <p><font face="Arial"><u>Choose needed supplies</u></font></p>
+            <p>
+            <div class="col-5">
+                <div class="form-group">
+                    <select multiple class="form-control" name="food" id="food">
+                        <option value="spry-bottle">Spray Bottle</option>
+                        <option value="fert">Fertilizer</option>
+                        <option value="glue">Floral Glue</option>
+                        <option value="rake">Little Rake</option>
+                    </select>
+                </div>
+            </div>
+            </p>
+        </p>
+        <!--- Plant Image --->
+        <img src="https://i.imgur.com/hhUhAXf.png" widht ="200" height="200">
+
+    </div>
+
+    <div class="three">
+        <form method="post" action="#">
+            <div class="row">
+                <div class="col-12 mt-2 mb-2">
+                    <div class="col-12 mt-2 mb-2">
+                        <h2 class="display-5"> <font face="Monospace"> <b>Checkout</b></font></h2>
+                    </div>
+
+                        <div class="col-10">
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-2 col-form-label">Name: </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="name" name="name" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10">
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-2 col-form-label">Email: </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="email" email="email" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-10">
+                            <div class="form-group row">
+                                <label for="email" class="col-sm-4 col-form-label">Password: </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="password" password="password" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-group row">
+                                <label for="comments" class="col-sm-2 col-form-label">Comments: </label>
+                                <div class="col-sm-12">
+
+                                    <input type="text" class="form-control" id="comments" comments="comments" value="">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit <i class="fa fa-check-circle-o" aria-hidden="true"></i></button>
+                        </div>
+                        </div>
+                        </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
